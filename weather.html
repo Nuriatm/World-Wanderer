@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="lib/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./assets/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./assets/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./assets/site.webmanifest" />
+
+    <title>World Wanderer</title>
+  </head>
+  <body>
+    <div id="menu">
+      <ul id="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clock.html">Clock</a></li>
+        <li><a href="weather.html">Weather</a></li>
+      </ul>
+      <button id="dark-light" class="dark-mode-toggle" onclick="toggleDarkMode()">
+     
+    </div>
+    <div id="search-container">
+      <input type="text" id="city-input" placeholder="Enter city name" />
+      <button id="search-button">Search</button>
+    </div>
+    <div id="weather-box">
+      <div id="weather-info"></div>
+    </div>
+    <footer><p>Projeto desenvolvido por - Nuria T M <br></p>
+      <div class="contact">
+        <a href="https://github.com/Nuriatm" target="_blank">
+          <i class="fa-brands fa-github"></i> Github
+        </a><br>
+        <a href="https://www.linkedin.com/in/nuria-toledo-martins-94a69b240/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> Linkedin
+        </a>
+      </div>
+    </footer>
+
+  
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="./scripts/weather-script.js"></script>
+    <script src="./scripts/script-dark-light.js"></script>
+    <script
+      src="https://kit.fontawesome.com/60029bc775.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

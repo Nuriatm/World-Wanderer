@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="lib/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="/assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="/assets/css/brands.css" rel="stylesheet" />
+    <link href="/assets/css/solid.css" rel="stylesheet" />
+
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/assets/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./assets/site.webmanifest" />
+  
+    <title>World Wanderer</title>
+  </head>
+  <body>
+    <div id="menu">
+      <ul id="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clock.html">Clock</a></li>
+        <li><a href="weather.html">Weather</a></li>
+      </ul>
+      <button
+        id="dark-light"
+        class="dark-mode-toggle"
+        onclick="toggleDarkMode()"
+      >
+        
+      </button>
+    </div>
+
+    <div id="box-inicio">
+      
+      <div class="flex-container">
+        <div class="text-content">
+          <h2>Welcome, <strong>World Wanderer!</i></strong></h2>
+          <p>
+            Embark on a journey with us as your <strong>ultimate source</strong> for
+            global insights into <strong>time, maps, and weather</strong>. Delve
+            into the intricacies of <strong>time zones</strong>, explore
+            <strong>interactive maps</strong>, and stay informed about
+            <strong>weather conditions</strong> worldwide.
+          </p>
+          <p>
+            Our <strong>digital compass</strong> is your guide through the captivating
+            realms of <strong>time, geography, and meteorology</strong>. Join us on
+            a seamless expedition where the
+            <strong>world's clocks, maps, and weather converge</strong>, enhancing
+            your <strong>exploration and discovery</strong>.
+          </p>
+        </div>
+        <div class="container">
+          <div class="sphere">
+            <div class="layer">
+              <div class="ambience">
+              </div>
+            </div>
+            <div class="layer">
+              <div class="ocean-glare"></div>
+            </div>
+            <div class="layer land">
+            </div>
+            <div class="layer clouds">
+            </div>
+            <div class="layer darkside">
+            </div>
+            <div class="layer">
+              <div class="edge"></div>
+            </div>
+            <div class="layer">
+              <div class="glare"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="box-description" >
+        <div class="box-features">
+          <div class="feature-clock">
+            <h2 class="title-features"><i class="fa-solid fa-clock"></i> World Clock</i></h2>
+            <p class="p-descript">Stay synchronized with global time effortlessly. Our World Clock feature allows you to:</p>
+            <ul class="list-descript">
+              <li><i class="fa-solid fa-check"></i> Track multiple time zones <br>simultaneously</li>
+              <li><i class="fa-solid fa-check"></i> Effortlessly compare current times across the globe</li>
+              <li><i class="fa-solid fa-check"></i> Enhance your scheduling for international activities</li>
+            </ul>
+            <a href="clock.html"><button class="explore"> Discover <strong>+</strong></button></a>
+          </div>
+          
+          <div class="feature-weather">
+            <h2 class="title-features"><i class="fa-solid fa-cloud-sun-rain"></i> Weather</h2>
+            <p class="p-descript">Prepare for a journey with real-time weather updates. Our Weather feature allows you to:</p>
+            <ul class="list-descript">
+              <li><i class="fa-solid fa-check"></i> Check current weather conditions worldwide</li>
+              <li><i class="fa-solid fa-check"></i> Plan activities with accurate weather information</li>
+              <li><i class="fa-solid fa-check"></i> Receive detailed forecasts for specific cities</li>
+              
+            </ul>
+            <a href="weather.html"><button class="explore"> Discover <strong>+</strong></button></a>
+          </div>
+          
+          
+        
+        </div>
+      <div class="read-more" onclick="discoverHome()">
+        Read More <i class="fa-solid fa-caret-down" style="color: #1985a1"></i>
+      </div>
+    </div>
+
+    </div>
+    <div id="additional-content">
+      <p>
+        Unlock even more possibilities with our specialized tools. <br>Dive into
+        <strong>Weather by City</strong>, offering detailed forecasts for
+        locations around the globe. Stay ahead of the conditions affecting
+        your chosen destinations. Explore renowned
+        <strong>clocks and time zones</strong>, immersing yourself in the
+        history and significance of iconic landmarks.
+      </p>
+      <p>
+        From the <strong>Greenwich Mean Time</strong> to
+        <strong>Tokyo's bustling streets</strong>, our platform provides a
+        curated experience, connecting you with the pulse of
+        <strong>time</strong> across the world.
+      </p>
+      <p>
+        Your journey continues as we bring you closer to the fascinating interplay of
+        <strong>weather and time</strong>, making every exploration a
+        memorable adventure.
+      </p>
+    </div>
+    </div>
+    <footer><p>Projeto desenvolvido por - Nuria T M <br></p>
+      <div class="contact">
+        <a href="https://github.com/Nuriatm" target="_blank">
+          <i class="fa-brands fa-github"></i> Github
+        </a><br>
+        <a href="https://www.linkedin.com/in/nuria-toledo-martins-94a69b240/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> Linkedin
+        </a>
+      </div>
+    </footer>
+
+    
+    
+
+    <script src="./scripts/script-index.js"></script>
+    <script src="./scripts/script-dark-light.js"></script>
+    <script src="https://kit.fontawesome.com/60029bc775.js" crossorigin="anonymous"></script>
+  </body>
+</html>
